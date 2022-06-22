@@ -1,0 +1,27 @@
+/* Impor font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #ff6600;
+  --secondaryColorDark: #ff5100;
+  --secondaryColorAlt: #00794d;
+  --fontColor: #34302f;
+  --gradientIcons: linear-gradient(180deg, #fea400 0%, #ff6e01 100%);
+  --gradientAlt: linear-gradient(
+    90deg,
+    rgba(213, 232, 193, 1) 0%,
+    rgba(190, 225, 199, 1) 100%
+  );
+  --gradientInstagram: linear-gradient(
+    90deg,
+    rgb(240, 145, 52) 0%,
+    rgb(194, 27, 123) 100%
+  );
+
+  --gradientMessenger: linear-gradient(
+    180deg,
+    rgba(153, 191, 16, 1) 0%,
+    rgba(106, 176, 38, 1) 100%
+  );
+}

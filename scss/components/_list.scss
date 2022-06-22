@@ -1,0 +1,42 @@
+/* LIST   */
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+  
+    i {
+      transition: 0.5s;
+    }
+  
+    &:hover i {
+      transform: rotate(180deg);
+    }
+  
+    &::before {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 100%;
+      background-color: var(--secondaryColor);
+      bottom: 1px;
+      transform: translateX(-110%);
+      transition: all 0.5s ease 0s;
+    }
+  
+    &:hover::before {
+      transform: translateX(0);
+    }
+  }
+}

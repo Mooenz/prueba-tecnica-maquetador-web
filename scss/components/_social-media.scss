@@ -1,0 +1,41 @@
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  font-size: 12px;
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    color: #fff;
+    transition: 0.5s;
+
+    &:nth-child(1) {
+      background-color: var(--secondaryColor);
+    }
+
+    &:nth-child(2) {
+      background-color: #3c5992;
+    }
+
+    &:nth-child(3) {
+      background-color: #59a8e9;
+    }
+
+    &:nth-child(4) {
+      background: var(--gradientInstagram);
+    }
+
+    &:nth-child(5) {
+      background-color: #d84e43;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

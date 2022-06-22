@@ -1,0 +1,40 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 16px 20px 16px;
+  z-index: 10;
+  color: #455057;
+  font-size: 14px;
+
+  p {
+    margin: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: var(--gradientAlt);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.5s;
+  }
+
+  &:hover {
+    color: #0d4d48;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  @media screen and (min-width:1024px) {
+    font-size: 16px;
+  }
+}

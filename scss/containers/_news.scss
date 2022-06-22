@@ -1,0 +1,117 @@
+.news {
+  margin-bottom: 50px;
+
+  &__container-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    color: var(--secondaryColor);
+  }
+
+  &__body {
+    margin: 0;
+  }
+
+  &__swiper {
+    max-width: 1080px;
+
+    .swiper-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .swiper-wrapper {
+      margin-bottom: 70px;
+    }
+
+    .swiper-pagination-news {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      opacity: 1;
+      transition: 0.3s;
+      background-color: #29363f;
+      border: 2px solid transparent;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 10px;
+      height: 10px;
+      border: 2px solid #29363f;
+      background-color: var(--primaryColor);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 10px 24px 10px 30px;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &-date {
+      font-size: 0.8125rem;
+      color: #b1b1b1;
+    }
+
+    &-category {
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.6875rem;
+      color: var(--primaryColor);
+
+      &--orange {
+        background-color: var(--secondaryColor);
+      }
+
+      &--green {
+        background-color: var(--secondaryColorAlt);
+      }
+
+      &--orange-dark {
+        background-color: var(--secondaryColorDark);
+      }
+    }
+
+    &-body {
+      margin: 0;
+      font-size: 1.125rem;
+      line-height: 1.4;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+
+    @media screen and (min-width: 700px) {
+      position: absolute;
+      bottom: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

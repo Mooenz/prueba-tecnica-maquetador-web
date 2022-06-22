@@ -1,0 +1,21 @@
+.messenger {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1000;
+  display: grid;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  background: var(--gradientMessenger);
+
+  &-icon {
+    background: url('../../assets/icons/icon-messenger.svg');
+  }
+
+  &:active {
+    transform: scale(0.85);
+  }
+}

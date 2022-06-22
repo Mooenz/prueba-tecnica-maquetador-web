@@ -1,0 +1,55 @@
+/* MENU MOBILE */
+.menu-mobile {
+  @media screen and (min-width: 876px) {
+    display: none;
+  }
+
+  &__button {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover .bar {
+      background-color: var(--secondaryColor);
+    }
+
+    &.activeButton {
+      .bar:nth-child(1) {
+        width: 30%;
+      }
+
+      .bar:nth-child(2) {
+        width: 60%;
+      }
+    }
+  }
+
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--fontColor);
+  }
+
+  &__list {
+    position: absolute;
+    top: 134px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    padding: 24px;
+    margin: 0 24px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    background-color: var(--primaryColor);
+    transform: translateX(-110%);
+
+    &.activeList {
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.links {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 12px;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    min-width: 140px;
+    padding: 20px 15px 0;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.5s;
+
+    img {
+      transition: 0.5s;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__title {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  &__swiper {
+    padding: 5px;
+  }
+}
