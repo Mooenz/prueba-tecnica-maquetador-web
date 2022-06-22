@@ -699,18 +699,21 @@
             <p>Socorro - Santander</p>
           </div>
           <div class="social-media">
-            <div class="social-media-item">
+            <a href="#" class="social-media-item">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#" class="social-media-item">
               <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="social-media-item">
+            </a>
+            <a href="#" class="social-media-item">
               <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div class="social-media-item">
+            </a>
+            <a href="#" class="social-media-item">
               <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="social-media-item">
+            </a>
+            <a href="#" class="social-media-item">
               <i class="fa-brands fa-youtube"></i>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -756,8 +759,43 @@
       </div>
     </footer>
     <!-- MESSENGER BUTTON -->
-    <div class="messenger">
-      <span class="messenger-icon"></span>
+    <!-- <div class="messenger">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <span class="messenger-icon"></span>
+      </a>
+    </div> -->
+
+    <!-- Messenger Plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103351048733253");
+      chatbox.setAttribute("attribution", "install_email");
+      chatbox.setAttribute("attribution_version", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
   </body>
 </html>
